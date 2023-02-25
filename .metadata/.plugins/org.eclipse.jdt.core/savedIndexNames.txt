@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\SeleniumAutomationLearn\.metadata\.plugins\org.eclipse.jdt.core
+1594095291.index

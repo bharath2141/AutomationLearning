@@ -1,0 +1,60 @@
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class Locators2 {
+
+	public static void main(String[] args) throws InterruptedException  {
+		// TODO Auto-generated method stub
+		String name="bharath";
+		
+		System.setProperty("webdriver.chrome.driver", "C:/QentelliAutomation/drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.findElement(By.id("inputUsername")).sendKeys(name);
+		driver.findElement(By.name("inputPassword")).sendKeys(getPassword(driver));
+		driver.findElement(By.className("signInBtn")).click();
+		Thread.sleep(3000);
+		
+		System.out.println(driver.findElement(By.tagName("p")).getText());
+		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
+		/*String actual=driver.findElement(By.tagName("p")).getText();
+		String expected="You are successfully logged in.";
+		if(actual.equals(expected))
+		{
+			System.out.println("passed");
+		}
+		else
+		{
+			System.out.println("fail");
+		}
+		*/
+		
+		System.out.println(driver.findElement(By.cssSelector("h2")).getText());
+		Assert.assertEquals(driver.findElement(By.cssSelector("h2")).getText(), "Hello "+name+",");
+		driver.findElement(By.xpath("//button[text()='Log Out']")).click();
+	//	driver.close();
+		//getPassword(driver);
+		
+	
+	}
+	
+	public static String getPassword(WebDriver driver) throws InterruptedException
+	{
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[contains(text(),'Reset')]")).click();
+		System.out.println(driver.findElement(By.cssSelector(".infoMsg")).getText());
+		String password=driver.findElement(By.cssSelector(".infoMsg")).getText();
+		String[] updatedpwd=password.split("'");
+		String  formattedPwd=updatedpwd[1];
+		driver.findElement(By.cssSelector(".go-to-login-btn")).click();
+		return formattedPwd;
+	}
+
+}

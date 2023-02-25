@@ -1,0 +1,74 @@
+package rahulshettyacademy.tests;
+
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import rahulshettyacademy.TestComponents.BaseTest;
+import rahulshettyacademy.pageobjects.CartPage;
+import rahulshettyacademy.pageobjects.ConfirmationPage;
+import rahulshettyacademy.pageobjects.LandingPage;
+import rahulshettyacademy.pageobjects.OrdersPage;
+import rahulshettyacademy.pageobjects.PaymentPage;
+import rahulshettyacademy.pageobjects.ProductCatalogPage;
+
+public class SubmitOrderTest extends BaseTest {
+
+	String productName="zara coat 3";
+	@Test
+	public void submitOrder() throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+		
+		String countryName = "India";
+		String confirmationExpectedMsg = "THANKYOU FOR THE ORDER.";
+
+	
+		
+		ProductCatalogPage pc = lp.loginApplication("bharathreddy1428@gmail.com", "Funday@16");
+
+		// ProductCatalogPage pc = new ProductCatalogPage(driver);
+		// List<WebElement> products = pc.getProductList();
+		pc.addProductToCart(productName);
+		CartPage cp = pc.clickOnCart();
+
+		// CartPage cp = new CartPage(driver);
+		boolean match = cp.verifyingProductInCart(productName);
+		Assert.assertTrue(match);
+		PaymentPage pp = cp.clickOnCheckout();
+
+		// PaymentPage pp = new PaymentPage(driver);
+		ConfirmationPage cnmp = pp.processOrder(countryName);
+
+		// ConfirmationPage cnmp = new ConfirmationPage(driver);
+		String actualMsg = cnmp.confirmMessage();
+		Assert.assertEquals(actualMsg, confirmationExpectedMsg);
+
+	}
+	
+	@Test(dependsOnMethods="submitOrder")
+	public void OrderHistoryTest()
+	{
+		
+		ProductCatalogPage pc = lp.loginApplication("bharathreddy1428@gmail.com", "Funday@16");
+		OrdersPage op=lp.gotoOrdersPage();
+		Assert.assertTrue(op.getProductNameInOrderHistory(productName));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

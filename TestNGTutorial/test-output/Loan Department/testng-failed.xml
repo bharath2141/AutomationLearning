@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <parameter name="APIKey" value="dfhg451m"/>
+  <parameter name="URL" value="qaclickacademy.com"/>
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <packages>
+    <package name="test"/>
+  </packages>
+  <test thread-count="2" parallel="tests" name="Personal Loan(failed)">
+    <classes>
+      <class name="test.Day4">
+        <methods>
+          <include name="MobileLoginCarLoan"/>
+          <include name="LoginAPICarLoan"/>
+          <include name="beforeMethod"/>
+          <include name="webLoginCarLoan"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- test.Day4 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+  <test thread-count="2" parallel="tests" name="sample(failed)">
+    <parameter name="URL" value="rahulshettyacademy.com"/>
+    <classes>
+      <class name="test.Day4">
+        <methods>
+          <include name="MobileLoginCarLoan"/>
+          <include name="LoginAPICarLoan"/>
+          <include name="beforeMethod"/>
+          <include name="webLoginCarLoan"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- test.Day4 -->
+    </classes>
+  </test> <!-- sample(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->

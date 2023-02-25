@@ -1,0 +1,32 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class checkboxes {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:/QentelliAutomation/drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		System.out.println(driver.findElement(By.xpath("//input[contains(@id,'Senior')]/following-sibling::label")).getText());
+	List<WebElement> checkboxes=driver.findElements(By.xpath("//input[@type='checkbox']/following-sibling::label"));
+	int checkboxescount=checkboxes.size();
+	System.out.println(checkboxescount);
+	for(WebElement checkbox:checkboxes)
+	{
+		
+		if(checkbox.getText().equalsIgnoreCase("Senior Citizen"))
+		{
+			System.out.println(checkbox.isSelected());
+			checkbox.click();
+			System.out.println(checkbox.isSelected());
+			break;
+		}
+	}
+	}
+
+}

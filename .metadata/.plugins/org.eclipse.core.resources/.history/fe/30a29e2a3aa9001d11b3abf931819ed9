@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class JavaStreamsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> as=new ArrayList<String>();
+		as.add("abhijeet");
+		as.add("don");
+		as.add("alekhya");
+		as.add("adam");
+		as.add("ram");
+		as.add("Azli");
+		as.add("Alexa");
+		int count=0;
+		for(int i=0;i<as.size();i++)
+		{
+			if(as.get(i).startsWith("a"))
+			{
+				count++;
+			//	System.out.println(as.get(i));
+			}
+		}
+	//	System.out.println(count);
+		
+		//using javaStreams
+		long ct=as.stream().filter(s->s.startsWith("a")).count();
+	//	System.out.println(ct);
+		
+		//to create stream 
+		Stream<String> strm=Stream.of("abhijeet","don","alekhya","adam","ram","aliyas","aliza");
+	//	strm.filter(s->
+	//	s.length()>4).forEach(k->System.out.println(k));
+		
+	//	as.stream().filter(s->s.contains("al")).limit(2).map(s->s.toUpperCase()).forEach(s->System.out.println(s));
+		as.stream().filter(s->s.startsWith("A")).sorted().map(s->s.toUpperCase()).forEach(s->System.out.println(s));
+		
+	}
+
+}
