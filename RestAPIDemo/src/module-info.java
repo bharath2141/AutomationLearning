@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Gngidi
- *
- */
-module RestAPIDemo {
-}
