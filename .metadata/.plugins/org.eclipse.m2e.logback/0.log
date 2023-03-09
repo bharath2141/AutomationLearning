@@ -3595,3 +3595,39 @@
 2023-02-28 21:23:50,560 [Worker-135: Launching ComplexJsonParse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
 2023-02-28 21:24:12,714 [Worker-140: Launching ComplexJsonParse] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-02-28 21:24:12,715 [Worker-140: Launching ComplexJsonParse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-02-28 21:24:12,718 [Worker-140: Launching ComplexJsonParse] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-28 21:24:12,719 [Worker-140: Launching ComplexJsonParse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-01 11:51:49,468 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-01 11:51:52,427 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2023-03-07 12:14:48,287 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-07 12:26:06,784 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 17:03:07,631 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-09 17:25:31,530 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 17:25:31,654 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 17:25:31,659 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 17:25:31,661 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 18:50:58,645 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 21:32:18,183 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 21:49:41,028 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 21:49:41,089 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 21:49:41,094 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 21:49:41,095 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 21:50:38,845 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 21:50:38,846 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 21:50:38,851 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 21:50:38,852 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 22:09:22,323 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 22:10:02,741 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:10:02,813 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 22:10:02,820 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:10:02,822 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 22:13:06,253 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:13:06,273 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 22:13:06,278 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:13:06,280 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 22:22:35,066 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:22:35,068 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 22:22:35,073 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:22:35,075 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 22:25:49,578 [Worker-18: Launching DynamicJson] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:25:49,579 [Worker-18: Launching DynamicJson] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
