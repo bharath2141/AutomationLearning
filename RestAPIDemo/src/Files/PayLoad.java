@@ -66,17 +66,27 @@ public class PayLoad {
 		
 	}
 	
-	public static String addBook(String isbn,String aisle)
+	public static String addBook(String isbn1,String aisle1)
 	{
 		String addBookPayload="{\r\n"
 				+ "\r\n"
 				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
-				+ "\"isbn\":\""+isbn+"\",\r\n"
-				+ "\"aisle\":\""+aisle+"\",\r\n"
+				+ "\"isbn\":\""+isbn1+"\",\r\n"
+				+ "\"aisle\":\""+aisle1+"\",\r\n"
 				+ "\"author\":\"John foe\"\r\n"
 				+ "}\r\n"
 				+ "";
 		return addBookPayload;
+	}
+	
+	public static String deleteBook(String addedBookId)
+	{
+		String deleteBookPayload="{\r\n"
+				+ " \r\n"
+				+ "\"ID\" : \""+addedBookId+"\"\r\n"
+				+ " \r\n"
+				+ "} ";
+		return deleteBookPayload;
 	}
 
 }
