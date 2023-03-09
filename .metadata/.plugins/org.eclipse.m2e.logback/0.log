@@ -3631,3 +3631,7 @@
 2023-03-09 22:22:35,075 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
 2023-03-09 22:25:49,578 [Worker-18: Launching DynamicJson] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-03-09 22:25:49,579 [Worker-18: Launching DynamicJson] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
+2023-03-09 22:25:49,588 [Worker-18: Launching DynamicJson] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:25:49,590 [Worker-18: Launching DynamicJson] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\test\resources
+2023-03-09 22:35:25,284 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-09 22:35:25,301 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SeleniumAutomationLearn\RestAPIDemo\src\main\resources
