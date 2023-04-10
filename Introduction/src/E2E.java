@@ -83,7 +83,7 @@ WebElement selectLocator=driver.findElement(By.cssSelector("#ctl00_mainContent_D
 		
 		//System.out.println(checkboxes.size());
 		Assert.assertEquals(checkboxes.size(), 6);
-		for(int j=0;i<checkboxes.size();j++)
+		for(int j=0;j<checkboxes.size();j++)
 		{
 			if(checkboxes.get(j).getText().equalsIgnoreCase("Student"))
 			

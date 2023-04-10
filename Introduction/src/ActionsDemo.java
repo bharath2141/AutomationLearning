@@ -17,6 +17,7 @@ public class ActionsDemo {
 		Actions a=new Actions(driver);
 		a.moveToElement(driver.findElement(By.cssSelector("#nav-link-accountList"))).contextClick().perform();
 a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("Hello").doubleClick().perform();
+
 }
 
 }
